@@ -25,75 +25,80 @@
 	<body>
 		<div data-role="page" id="login" style="background: #63b6db">
 			<div data-role="header" style="background: #2c539e">
-	    		<h1 style="font-size:20px;color:#fff">Right-Track</h1>
+	    		<div class="ui-shadow ui-btn-icon-right ui-icon-cloud"></div><h1 style="font-size:20px;color:#fff">Right-Track</h1>
 	  		</div>
 	  		<img src="http://simpleicon.com/wp-content/uploads/cloud-10.png" height="100" width="140" style="display:block;margin:0 auto; margin-top:50px"/>
 			<div data-role="content" style="margin-top:2%;color:#fff">    
 	        	<label for="username">Username : </label>
-	        	<input type="text"  id="username" style="max-width:100px"/>
+	        	<input type="text"  id="username" style="max-width:150px"/>
 	        	<label for="pass">Password : </label>
-	        	<input type="password"  id="pass" style="max-width:100px"/>
+	        	<input type="password"  id="pass" style="max-width:150px"/>
 	        	<div data-role="content" style="padding-left:50px;padding-right:50px">
-	        		<a href="#page3"><input type="button" value="enter" class="btnClass" id="submit-btn"/></a>
+	        		<a href="#page2"><input type="button" value="enter" class="btnClass" id="submit-btn"/></a>
 	        	</div>
 	    	</div>
     	</div>
-        <div data-role="page" id="page2">
-            <h2>Journey Options</h2>
-            <div id="choose-destination">
-                <label for="source">To : </label>
-                <input type="text" id="to-address" style="max-width:100px"/>
-                <label for="destination">From : </label>
-                <input type="text" id="from-address" style="max-width:100px"/>
+        <div data-role="page" id="page2" style="background: #63b6db">
+            <div data-role="header" style="background: #2c539e">
+                <div class="ui-shadow ui-btn-icon-right ui-icon-cloud"></div><h1 style="font-size:20px;color:#fff">Right-Track</h1>
             </div>
-            <div>
-                <form>
+            <img src="http://simpleicon.com/wp-content/uploads/cloud-10.png" height="100" width="140" style="display:block;margin:0 auto; margin-top:50px"/>
+            <h2 style="text-align:center">Journey Options</h2>
+            <div data-role="content">
+                <label for="source">To : </label>
+                <input type="text" id="to-address" style="max-width:150px;padding-left:20px;padding-right:20px"/>
+                <label for="destination">From : </label>
+                <input type="text" id="from-address" style="max-width:150px;padding-left:20px;padding-right:20px"/>
+            </div>
+            <form>
+                <fieldset data-role="collapsible" style="padding-left:20px;padding-right:20px;">
+                    <legend><h3>Preferences</h3></legend>
                     <fieldset data-role="collapsible">
-                        <legend><h3>Preferences</h3></legend>
-                        <fieldset data-role="collapsible">
-                            <legend>Price Range</legend>
-                            <div data-role="controlgroup" data-style="horizontal">
-                                <input type="radio" name="price-range" id="<3">
-                                <label for="<3">Under &#163 3</label>
-                                <input type="radio" name="price-range" id="3-5">
-                                <label for="3-5">&#163 3 - &#163 4.99</label>
-                                <input type="radio" name="price-range" id="5-7.50">
-                                <label for="5-7.50">&#163 5.00 - &#163 7.50</label>
-                                <input type="radio" name="price-range" id="7.50<">
-                                <label for="7.50<">Over &#163 7.50</label>
-                            </div>
-                        </fieldset>
-                        <fieldset data-role="collapsible">
-                            <legend>Journey Length</legend>
-                            <div data-role="controlgroup">
-                                <label for="duration"> Duration: </label>
-                                <input type="radio" name="duration" id="<15">
-                                <label for="<15">Under 15 minutes</label>
-                                <input type="radio" name="duration" id="15-30">
-                                <label for="15-30">Between 15 and 30 minutes</label>
-                                <input type="radio" name="duration" id="30-60">
-                                <label for="30-60">Between half an hour and an hour</label>
-                                <input type="radio" name="duration" id="60<">
-                                <label for="60<">Longer than an hour</label>
-                            </div>
-                        </fieldset>
-                        <fieldset data-role="collapsible">
-                            <legend>Transport</legend>
-                            <div data-role="controlgroup">
-                                <input type="checkbox" name="mode-of-transport" id="car">
-                                <label for="car">Car</label>
-                                <input type="checkbox" name="mode-of-transport" id="bus">
-                                <label for="bus">Bus</label>
-                                <input type="checkbox" name="mode-of-transport" id="underground">
-                                <label for="underground">London Underground</label>
-                                <input type="checkbox" name="mode-of-transport" id="national-rail">
-                                <label for="national-rail">National Rail</label>
-                                <input type="checkbox" name="mode-of-transport" id="bike">
-                                <label for="bike">Bicycle</label><br>
-                            </div>
-                        </fieldset>
+                        <legend >Price Range</legend>
+                        <div data-role="controlgroup" data-style="horizontal">
+                            <input type="radio" name="price-range" id="<3">
+                            <label for="<3">Under &#163 3</label>
+                            <input type="radio" name="price-range" id="3-5">
+                            <label for="3-5">&#163 3 - &#163 4.99</label>
+                            <input type="radio" name="price-range" id="5-7.50">
+                            <label for="5-7.50">&#163 5.00 - &#163 7.50</label>
+                            <input type="radio" name="price-range" id="7.50<">
+                            <label for="7.50<">Over &#163 7.50</label>
+                        </div>
                     </fieldset>
-                </form>
+                    <fieldset data-role="collapsible">
+                        <legend>Journey Length</legend>
+                        <div data-role="controlgroup">
+                            <label for="duration"> Duration: </label>
+                            <input type="radio" name="duration" id="<15">
+                            <label for="<15">Under 15 minutes</label>
+                            <input type="radio" name="duration" id="15-30">
+                            <label for="15-30">Between 15 and 30 minutes</label>
+                            <input type="radio" name="duration" id="30-60">
+                            <label for="30-60">Between half an hour and an hour</label>
+                            <input type="radio" name="duration" id="60<">
+                            <label for="60<">Longer than an hour</label>
+                        </div>
+                    </fieldset>
+                    <fieldset data-role="collapsible">
+                        <legend>Transport</legend>
+                        <div data-role="controlgroup">
+                            <input type="checkbox" name="mode-of-transport" id="car">
+                            <label for="car">Car</label>
+                            <input type="checkbox" name="mode-of-transport" id="bus">
+                            <label for="bus">Bus</label>
+                            <input type="checkbox" name="mode-of-transport" id="underground">
+                            <label for="underground">London Underground</label>
+                            <input type="checkbox" name="mode-of-transport" id="national-rail">
+                            <label for="national-rail">National Rail</label>
+                            <input type="checkbox" name="mode-of-transport" id="bike">
+                            <label for="bike">Bicycle</label><br>
+                        </div>
+                    </fieldset>
+                </fieldset>
+            </form>
+            <div data-role="content" style="padding-left:50px;padding-right:50px">
+                <a href="#page3"><input type="button" value="go" class="btnClass" id="submit-btn"/></a>
             </div>
         </div>
         <div data-role="page" id="page3">
