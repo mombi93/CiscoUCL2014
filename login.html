@@ -34,10 +34,36 @@
             </div>
         </div>
         <div data-role="page" id="page2">
-            <label for="source">To : </label>
-            <input type="text" id="to-address" style="max-width:100px"/>
-            <label for="destination">From : </label>
-            <input type="text" id="from-address" style="max-width:100px"/>
+            <div id=choose-destination>
+                <label for="source">To : </label>
+                <input type="text" id="to-address" style="max-width:100px"/>
+                <label for="destination">From : </label>
+                <input type="text" id="from-address" style="max-width:100px"/>
+            </div>
+            <div>
+                <form class="preferences">
+                    <fieldset data-role="collapsible">
+                    <legend>Preferences</legend>
+                    <label for="price"> Cost Range: </label>
+                    <input type="radio" name="price-range" value="<3">Under &#163 3<br>
+                    <input type="radio" name="price-range" value="3-5">&#163 3 - &#163 4.99<br>
+                    <input type="radio" name="price-range" value="5-7.50">&#163 5.00 - &#163 7.50<br>
+                    <input type="radio" name="price-range" value="7.50<">Over &#163 7.50<br><br>
+
+                    <label for="mode"> Transport: </label>
+                    <input type="checkbox" name="mode-of-transport" value="car">Car<br>
+                    <input type="checkbox" name="mode-of-transport" value="bus">Bus<br> 
+                    <input type="checkbox" name="mode-of-transport" value="underground">London Underground<br>
+                    <input type="checkbox" name="mode-of-transport" value="national-rail">National Rail<br>
+                    <input type="checkbox" name="mode-of-transport" value="bike">Bicycle<br><br>
+            
+                    <label for="duration"> Duration: </label>
+                    <input type="radio" name="duration" value="<15">Under 15 minutes<br>
+                    <input type="radio" name="duration" value="15-30">Between 15 and 30 minutes<br>
+                    <input type="radio" name="duration" value="30-60">Between half an hour and an hour<br>
+                    <input type="radio" name="duration" value="60<">Longer than an hour<br><br>
+                </form>
+            </div>
         </div>
 </html>
 
