@@ -15,6 +15,11 @@
 				display: block;
 				left:center;
 			}
+			#submit-btn{
+				display: block;
+				max-width:40%;
+				left: 50%;
+			}
 		</style>
 	</head>
 	<body>
@@ -22,20 +27,19 @@
 			<div data-role="header">
 	    		<h1 style="font-size:20px">Right-Track</h1>
 	  		</div>
-	  		<div class="ui-icon-cloud"></div>
-			<div data-role="content" style="margin-top:5%">    
+	  		<img src="http://simpleicon.com/wp-content/uploads/cloud-10.png" height="100" width="140" style="display:block;margin:0 auto; margin-top:50px"/>
+			<div data-role="content" style="margin-top:2%">    
 	        	<label for="username">Username : </label>
 	        	<input type="text"  id="username" style="max-width:100px"/>
 	        	<label for="pass">Password : </label>
 	        	<input type="password"  id="pass" style="max-width:100px"/>
-	        	<div data-role="content" style="max-width:40%;margin-top:">
-	        		<a href="#page2"><input type="button" value="submit" class="btnClass"/></a>
+	        	<div data-role="content" style="padding-left:50px;padding-right:50px">
+	        		<a href="#page2"><input type="button" value="submit" class="btnClass" id="submit-btn"/></a>
 	        	</div>
 	    	</div>
     	</div>
     	<div data-role="page" id="page2">
-
-    	</div>
+       	</div>
 </html>
 
 
