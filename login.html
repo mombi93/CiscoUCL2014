@@ -29,7 +29,7 @@
                 <label for="pass">Password : </label>
                 <input type="password"  id="pass" style="max-width:100px"/>
                 <div data-role="content" style="max-width:40%;margin-top:">
-                    <a href="#page2"><input type="button" value="submit" class="btnClass"/></a>
+                    <a href="#page2"><input type="button" id="submit" class="btnClass"/></a>
                 </div>
             </div>
         </div>
@@ -44,23 +44,43 @@
             <div>
                 <form>
                     <fieldset data-role="collapsible">
-                    <legend>Preferences</legend>
-                        <div data-role="controlgroup">
-                            <label for="price"> Cost Range: </label>
-                            <input type="radio" name="price-range" value="<3" style="max-width:100px">Under &#163 3 <br>
-                            <input type="radio" name="price-range" value="3-5" style="max-width:100px">&#163 3 - &#163 4.99<br>
-                            <input type="radio" name="price-range" value="5-7.50" style="max-width:100px">&#163 5.00 - &#163 7.50<br>
-                            <input type="radio" name="price-range" value="7.50<" style="max-width:100px">Over &#163 7.50<br><br>
-                        </div><br>
+                        <legend>Preferences</legend>
+                        <label for="price"><h3>Price Range: </h3></label>
+                        <div data-role="controlgroup" data-style="horizontal">
+                            <input type="radio" name="price-range" id="<3">
+                            <label for="<3">Under &#163 3</label>
+                            <input type="radio" name="price-range" id="3-5">
+                            <label for="3-5">&#163 3 - &#163 4.99</label>
+                            <input type="radio" name="price-range" id="5-7.50">
+                            <label for="5-7.50">&#163 5.00 - &#163 7.50</label>
+                            <input type="radio" name="price-range" id="7.50<">
+                            <label for="7.50<">Over &#163 7.50</label><br><br>
+                        </div>
 
-                        <label for="mode"> Transport: </label>
-                        <input type="checkbox" name="mode-of-transport" value="car">Car<input type="checkbox" name="mode-of-transport" value="bus">Bus<input type="checkbox" name="mode-of-transport" value="underground">London Underground<input type="checkbox" name="mode-of-transport" value="national-rail">National Rail<input type="checkbox" name="mode-of-transport" value="bike">Bicycle<br>
-                
-                        <label for="duration"> Duration: </label>
-                        <input type="radio" name="duration" value="<15">Under 15 minutes
-                        <input type="radio" name="duration" value="15-30">Between 15 and 30 minutes
-                        <input type="radio" name="duration" value="30-60">Between half an hour and an hour
-                        <input type="radio" name="duration" value="60<">Longer than an hour<br>
+                        <label for="price"><h3>Journey Length: </h3></label>
+                        <div data-role="controlgroup">
+                            <label for="duration"> Duration: </label>
+                            <input type="radio" name="duration" id="<15">
+                            <label for="<15">Under 15 minutes</label>
+                            <input type="radio" name="duration" id="15-30">
+                            <label for="15-30">Between 15 and 30 minutes</label>
+                            <input type="radio" name="duration" id="30-60">
+                            <label for="30-60">Between half an hour and an hour</label>
+                            <input type="radio" name="duration" id="60<">
+                            <label for="60<">Longer than an hour</label>
+                        </div>
+
+                        <label for="mode"><h3>Transport:</h3></label>
+                        <input type="checkbox" name="mode-of-transport" id="car">
+                        <label for="car">Car</label>
+                        <input type="checkbox" name="mode-of-transport" id="bus">
+                        <label for="bus">Bus</label>
+                        <input type="checkbox" name="mode-of-transport" id="underground">
+                        <label for="underground">London Underground</label>
+                        <input type="checkbox" name="mode-of-transport" id="national-rail">
+                        <label for="national-rail">National Rail</label>
+                        <input type="checkbox" name="mode-of-transport" id="bike">
+                        <label for="bike">Bicycle</label><br>
                     </fieldset>
                 </form>
             </div>
