@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css"/>
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 		<style>
@@ -18,17 +18,23 @@
 		</style>
 	</head>
 	<body>
-		<div data-role="header">
-    		<h1 style="font-size:20px">Right-Track</h1>
-  		</div>
-		<div data-role="content" style="margin-top:5%">    
-        	<label for="username">Username : </label>
-        	<input type="text"  id="username" style="max-width:100px"/>
-        	<label for="pass">Password : </label>
-        	<input type="password"  id="pass" style="max-width:100px"/>
-        	<div data-role="content" style="max-width:40%">
-        		<a href="preferences_form.html"><input type="button" value="submit" class="btnClass"/></a>
-        	</div>
+		<div data-role="page" id="login" style="background: #63b6db">
+			<div data-role="header">
+	    		<h1 style="font-size:20px">Right-Track</h1>
+	  		</div>
+	  		<div class="ui-icon-cloud"></div>
+			<div data-role="content" style="margin-top:5%">    
+	        	<label for="username">Username : </label>
+	        	<input type="text"  id="username" style="max-width:100px"/>
+	        	<label for="pass">Password : </label>
+	        	<input type="password"  id="pass" style="max-width:100px"/>
+	        	<div data-role="content" style="max-width:40%;margin-top:">
+	        		<a href="#page2"><input type="button" value="submit" class="btnClass"/></a>
+	        	</div>
+	    	</div>
+    	</div>
+    	<div data-role="page" id="page2">
+
     	</div>
 </html>
 
