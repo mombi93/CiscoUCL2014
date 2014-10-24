@@ -21,6 +21,13 @@
 				left: 50%;
 			}
 		</style>
+        <script>
+            $(document).ready(function(){
+                $(".ui-icon-forward").onclick(function(){
+                    window.open("#login");
+                });
+            });
+        </script>
 	</head>
 	<body>
 		<div data-role="page" id="login" style="background: #63b6db">
@@ -40,7 +47,7 @@
     	</div>
         <div data-role="page" id="page2" style="background: #63b6db">
             <div data-role="header" style="background: #2c539e">
-                <div class="ui-shadow ui-btn-icon-right ui-icon-cloud"></div><h1 style="font-size:20px;color:#fff">Right-Track</h1>
+                <div class="ui-shadow ui-btn-icon-left ui-icon-forward"></div><h1 style="font-size:20px;color:#fff">Right-Track</h1><div class="ui-shadow ui-btn-icon-right ui-icon-cloud"></div>
             </div>
             <img src="http://simpleicon.com/wp-content/uploads/cloud-10.png" height="100" width="140" style="display:block;margin:0 auto; margin-top:50px"/>
             <h2 style="text-align:center">Journey Options</h2>
@@ -66,6 +73,7 @@
                             <label for="7.50<">Over &#163 7.50</label>
                         </div>
                     </fieldset>
+                    <br>
                     <fieldset data-role="collapsible">
                         <legend>Journey Length</legend>
                         <div data-role="controlgroup">
@@ -80,6 +88,7 @@
                             <label for="60<">Longer than an hour</label>
                         </div>
                     </fieldset>
+                    <br>
                     <fieldset data-role="collapsible">
                         <legend>Transport</legend>
                         <div data-role="controlgroup">
